@@ -1,0 +1,39 @@
+#######################################
+# Syntax Coloring Map For DevLab_DPad
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+DevLab_DPad	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+beginRecovered	KEYWORD2
+readButtons	KEYWORD2
+update	KEYWORD2
+isPressed	KEYWORD2
+wasPressed	KEYWORD2
+wasReleased	KEYWORD2
+state	KEYWORD2
+busReady	KEYWORD2
+isConnected	KEYWORD2
+deviceInfo	KEYWORD2
+printInfo	KEYWORD2
+protocol	KEYWORD2
+bus	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+DEFAULT_ADDRESS	LITERAL1
+S1	LITERAL1
+S2	LITERAL1
+S3	LITERAL1
+S4	LITERAL1
+ALL	LITERAL1
