@@ -1,3 +1,14 @@
+/**
+ * @file changeAddress.ino
+ * @brief Scans the I2C bus and changes the I2C address of a DDP device.
+ *
+ * Serial commands: "scan" and "change <current_hex> <new_hex>".
+ * Compatible with ESP32, RP2040/RP2350, STM32 and AVR.
+ *
+ * @author Jonathan Mejorado
+ * @organization UNIT Electronics MX
+ */
+
 #include <Arduino.h>
 #include <Wire.h>
 #include <DevLabDDP.h>
@@ -32,7 +43,7 @@
   #define I2C_BUS Wire
   constexpr int SDA_PIN = SDA;
   constexpr int SCL_PIN = SCL;
-  constexpr uint32_t I2C_FREQ = 100000UL;  // 400 kHz falla con el level shifter en UNO
+  constexpr uint32_t I2C_FREQ = 100000UL;  // 400 kHz fails with the level shifter on UNO
 #else
 #error "Use an ESP32, RP2040, RP2350, STM32, or AVR master"
 #endif

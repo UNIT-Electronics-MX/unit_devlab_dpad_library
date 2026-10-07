@@ -1,3 +1,11 @@
+/**
+ * @file DevLab_DPad.cpp
+ * @brief Implementation of the UNIT DevLab D-Pad module driver.
+ *
+ * @author Jonathan Mejorado
+ * @organization UNIT Electronics MX
+ */
+
 #include "DevLab_DPad.h"
 
 bool DevLab_DPad::begin() {

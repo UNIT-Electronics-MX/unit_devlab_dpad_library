@@ -1,9 +1,9 @@
 /**
  * @file readButtons.ino
- * @brief Lee los cuatro botones (S1-S4) del módulo D-Pad por I2C.
+ * @brief Reads the four buttons (S1-S4) of the D-Pad module over I2C.
  *
- * Imprime por Serial el estado de S1..S4 solo cuando cambia.
- * Compatible con ESP32, RP2040/RP2350, STM32 y AVR.
+ * Prints the state of S1..S4 over Serial only when it changes.
+ * Compatible with ESP32, RP2040/RP2350, STM32 y AVR.
  *
  * @author Jonathan Mejorado
  * @organization UNIT Electronics MX
@@ -43,7 +43,7 @@
   #define I2C_BUS Wire
   constexpr int SDA_PIN = SDA;
   constexpr int SCL_PIN = SCL;
-  constexpr uint32_t I2C_FREQ = 100000UL;  // 400 kHz falla con el level shifter en UNO
+  constexpr uint32_t I2C_FREQ = 100000UL;  // 400 kHz fails with the level shifter on UNO
 #else
 #error "Use an ESP32, RP2040, RP2350, STM32, or AVR master"
 #endif

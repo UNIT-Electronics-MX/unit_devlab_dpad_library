@@ -1,9 +1,9 @@
 /**
  * @file buttonEvents.ino
- * @brief Detecta eventos de pulsación y liberación de S1-S4 del módulo D-Pad.
+ * @brief Detects press and release events of S1-S4 on the D-Pad module.
  *
- * Usa update()/wasPressed()/wasReleased() para imprimir cada flanco una vez.
- * Compatible con ESP32, RP2040/RP2350, STM32 y AVR.
+ * Uses update()/wasPressed()/wasReleased() to print each edge once.
+ * Compatible with ESP32, RP2040/RP2350, STM32 y AVR.
  *
  * @author Jonathan Mejorado
  * @organization UNIT Electronics MX
@@ -43,7 +43,7 @@
   #define I2C_BUS Wire
   constexpr int SDA_PIN = SDA;
   constexpr int SCL_PIN = SCL;
-  constexpr uint32_t I2C_FREQ = 100000UL;  // 400 kHz falla con el level shifter en UNO
+  constexpr uint32_t I2C_FREQ = 100000UL;  // 400 kHz fails with the level shifter on UNO
 #else
 #error "Use an ESP32, RP2040, RP2350, STM32, or AVR master"
 #endif

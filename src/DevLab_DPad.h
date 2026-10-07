@@ -1,3 +1,14 @@
+/**
+ * @file DevLab_DPad.h
+ * @brief Driver for the UNIT DevLab D-Pad module (4 buttons S1-S4) over I2C.
+ *
+ * Provides raw and debounced button reads plus press/release edge detection
+ * on top of the DevLab DDP protocol.
+ *
+ * @author Jonathan Mejorado
+ * @organization UNIT Electronics MX
+ */
+
 #ifndef DEVLAB_DPAD_H
 #define DEVLAB_DPAD_H
 
